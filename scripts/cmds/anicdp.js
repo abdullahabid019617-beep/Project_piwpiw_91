@@ -57,16 +57,16 @@ module.exports = {
       }
 
       if (!streamAttachments.length)
-        return message.reply("❌ All image URLs failed to load.");
+        return message.reply("❌ Piw Piw Chat Bot All image URLs failed to load.");
 
       return message.reply({
-        body: `🎀 𝐇𝐞𝐫𝐞'𝐬 𝐲𝐨𝐮𝐫 𝐫𝐚𝐧𝐝𝐨𝐦 𝐚𝐧𝐢𝐦𝐞 𝐜𝐝𝐩 𝐛𝐚𝐛𝐲.`,
+        body: `🎀 𝐏𝐢𝐰 𝐏𝐢𝐰 𝐂𝐡𝐚𝐭 𝐁𝐨𝐭 𝐇𝐞𝐫𝐞'𝐬 𝐲𝐨𝐮𝐫 𝐫𝐚𝐧𝐝𝐨𝐦 𝐚𝐧𝐢𝐦𝐞 𝐜𝐝𝐩 𝐛𝐚𝐛𝐲.`,
         attachment: streamAttachments
       });
 
     } catch (err) {
       console.error("Full error:", err.response?.data || err.message);
-      return message.reply("🥹error, contact MahMUD");
+      return message.reply("🥹error, contact Gojo Orupe Piw Piw");
     }
   }
 };
