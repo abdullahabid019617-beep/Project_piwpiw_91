@@ -18,14 +18,14 @@ module.exports = {
   },
 
   onStart: async function ({ api, event, args }) {
-    if (!args[0]) return api.sendMessage("⚠️ Please enter an anime name", event.threadID, event.messageID);
+    if (!args[0]) return api.sendMessage("⚠️ Piw Piw Chat Bot Please enter an anime name", event.threadID, event.messageID);
 
     try {
       const url = `${await mahmud()}/api/animeinfo?animeName=${encodeURIComponent(args.join(" "))}`;
       const res = await axios.get(url);
       const { formatted_message, data } = res.data;
 
-      if (!res.data || !data) return api.sendMessage("❌ Not found", event.threadID, event.messageID);
+      if (!res.data || !data) return api.sendMessage("❌ Piw Piw Chat Bot Not found", event.threadID, event.messageID);
 
       api.sendMessage({
         body: formatted_message,
