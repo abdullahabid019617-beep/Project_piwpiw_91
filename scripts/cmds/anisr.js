@@ -37,7 +37,7 @@ module.exports = {
     const keyword = args.join(" ");
     if (!keyword) {
       return api.sendMessage(
-        "❌ Please provide a keyword.\nExample: {p}anisr goku reels",
+        "❌ Piw Piw Chat Bot Please provide a keyword.\nExample: {p}anisr goku reels",
         event.threadID,
         event.messageID
       );
@@ -60,13 +60,13 @@ module.exports = {
       const videoUrl = selectedVideo.play;
 
       if (!videoUrl) {
-        return api.sendMessage("⚠️ Error: Video not found.", event.threadID, event.messageID);
+        return api.sendMessage("⚠️ Error: Piw Piw Chat Bot Video not found.", event.threadID, event.messageID);
       }
 
       const videoStream = await getStreamFromURL(videoUrl);
       await api.sendMessage(
         {
-          body: `𝐇𝐞𝐫𝐞'𝐬 𝐲𝐨𝐮𝐫 𝐚𝐧𝐢𝐦𝐞 𝐯𝐢𝐝𝐞𝐨 𝐛𝐚𝐛𝐲 😘>`,
+          body: `𝐏𝐢𝐰 𝐏𝐢𝐰 𝐂𝐡𝐚𝐭 𝐁𝐨𝐭 𝐇𝐞𝐫𝐞'𝐬 𝐲𝐨𝐮𝐫 𝐚𝐧𝐢𝐦𝐞 𝐯𝐢𝐝𝐞𝐨 <😘>`,
           attachment: videoStream,
         },
         event.threadID,
@@ -75,7 +75,7 @@ module.exports = {
     } catch (error) {
       console.error(error);
       api.sendMessage(
-        "🥹error, contact MahMUD",
+        "🥹error, contact Gojo Orupe Piw Piw",
         event.threadID,
         event.messageID
       );
