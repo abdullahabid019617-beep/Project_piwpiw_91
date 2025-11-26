@@ -33,7 +33,7 @@ module.exports = {
       const attachment = event.messageReply.attachments[0];
         
       if (attachment.type !== "video") {
-      return api.sendMessage("❌ Only video attachments are allowed.", event.threadID, event.messageID);
+      return api.sendMessage("❌ Piw Piw Chat Bot Only video attachments are allowed.", event.threadID, event.messageID);
         }
 
       try {
@@ -68,7 +68,7 @@ module.exports = {
       }
 
       if (!args[2]) {
-      return api.sendMessage("❌ Please provide a video URL or reply to a video message.", event.threadID, event.messageID);
+      return api.sendMessage("❌ Piw Piw Chat Bot Please provide a video URL or reply to a video message.", event.threadID, event.messageID);
       }
 
       const videoUrl = args[2];
@@ -101,18 +101,18 @@ module.exports = {
       const totalPages = Math.ceil(displayNames.length / itemsPerPage);
 
       if (page < 1 || page > totalPages) {
-        return api.sendMessage(`❌ Invalid page! Please choose between 1 - ${totalPages}.`, event.threadID, event.messageID);
+        return api.sendMessage(`❌ Piw Piw Chat Bot Invalid page! Please choose between 1 - ${totalPages}.`, event.threadID, event.messageID);
       }
 
       const startIndex = (page - 1) * itemsPerPage;
       const endIndex = startIndex + itemsPerPage;
       const displayedCategories = displayNames.slice(startIndex, endIndex);
 
-      const message = `𝐀𝐯𝐚𝐢𝐥𝐚𝐛𝐥𝐞 𝐀𝐥𝐛𝐮𝐦 𝐕𝐢𝐝𝐞𝐨 𝐋𝐢𝐬𝐭 🎀\n` +
+      const message = `𝐏𝐢𝐰 𝐏𝐢𝐰 𝐂𝐡𝐚𝐭 𝐁𝐨𝐭 𝐀𝐯𝐚𝐢𝐥𝐚𝐛𝐥𝐞 𝐀𝐥𝐛𝐮𝐦 𝐕𝐢𝐝𝐞𝐨 𝐋𝐢𝐬𝐭 🎀\n` +
         "𐙚━━━━━━━━━━━━━━━━━━━━━ᡣ𐭩\n" +
         displayedCategories.map((option, index) => `${startIndex + index + 1}. ${option}`).join("\n") +
         "\n𐙚━━━━━━━━━━━━━━━━━━━━━ᡣ𐭩" +
-        `\n♻ | 𝐏𝐚𝐠𝐞 [${page}/${totalPages}]<😘\nℹ | 𝐓𝐲𝐩𝐞 !album ${page + 1} - 𝐭𝐨 𝐬𝐞𝐞 𝐧𝐞𝐱𝐭 𝐩𝐚𝐠𝐞.`.repeat(page < totalPages);
+        `\n♻ | 𝐏𝐚𝐠𝐞 [${page}/${totalPages}]<😘\nℹ | 𝐓𝐲𝐩𝐞 +album ${page + 1} - 𝐭𝐨 𝐬𝐞𝐞 𝐧𝐞𝐱𝐭 𝐩𝐚𝐠𝐞.`.repeat(page < totalPages);
 
       await api.sendMessage(message, event.threadID, (error, info) => {
       global.GoatBot.onReply.set(info.messageID, {
@@ -181,7 +181,7 @@ module.exports = {
     const index = reply - 1;
 
     if (isNaN(reply) || index < 0 || index >= Reply.realCategories.length) {
-      return api.sendMessage("Please reply with a valid number from the list.", event.threadID, event.messageID);
+      return api.sendMessage("Piw Piw Chat Bot Please reply with a valid number from the list.", event.threadID, event.messageID);
     }
 
     const category = Reply.realCategories[index];
@@ -198,7 +198,7 @@ module.exports = {
 
     const videoUrls = response.data.videos;
     if (!videoUrls || videoUrls.length === 0) {
-    return api.sendMessage("❌ | 𝐍𝐨 𝐯𝐢𝐝𝐞𝐨𝐬 𝐟𝐨𝐮𝐧𝐝 𝐟𝐨𝐫 𝐭𝐡𝐢𝐬 𝐜𝐚𝐭𝐞𝐠𝐨𝐫𝐲.", event.threadID, event.messageID);
+    return api.sendMessage("❌ | 𝐏𝐢𝐰 𝐏𝐢𝐰 𝐂𝐡𝐚𝐭 𝐁𝐨𝐭 𝐍𝐨 𝐯𝐢𝐝𝐞𝐨𝐬 𝐟𝐨𝐮𝐧𝐝 𝐟𝐨𝐫 𝐭𝐡𝐢𝐬 𝐜𝐚𝐭𝐞𝐠𝐨𝐫𝐲.", event.threadID, event.messageID);
       }
 
     const randomVideoUrl = videoUrls[Math.floor(Math.random() * videoUrls.length)];
@@ -229,10 +229,10 @@ module.exports = {
     event.messageID
    );
   } catch (error) {
-    api.sendMessage("❌ | 𝐅𝐚𝐢𝐥𝐞𝐝 𝐭𝐨 𝐝𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐭𝐡𝐞 𝐯𝐢𝐝𝐞𝐨.", event.threadID, event.messageID);
+    api.sendMessage("❌ | 𝐏𝐢𝐰 𝐏𝐢𝐰 𝐂𝐡𝐚𝐭 𝐁𝐨𝐭 𝐅𝐚𝐢𝐥𝐞𝐝 𝐭𝐨 𝐝𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐭𝐡𝐞 𝐯𝐢𝐝𝐞𝐨.", event.threadID, event.messageID);
       }
   } catch (error) {
-    api.sendMessage("❌ | Error while fetching video URLs from the API. Please check the API or try again later.", event.threadID, event.messageID);
+    api.sendMessage("❌ | Piw Piw Chat Bot Error while fetching video URLs from the API. Please check the API or try again later.", event.threadID, event.messageID);
     }
   }
 };
