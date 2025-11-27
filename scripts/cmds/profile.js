@@ -46,7 +46,7 @@ module.exports = {
 
       const avatarStream = await global.utils.getStreamFromURL(avatarUrl);
       message.reply({
-        body: "😘 𝐇𝐞𝐫𝐞 𝐢𝐬 𝐭𝐡𝐞 𝐩𝐫𝐨𝐟𝐢𝐥𝐞 𝐢𝐦𝐚𝐠𝐞",
+        body: "😘 𝐏𝐢𝐰 𝐏𝐢𝐰 𝐂𝐡𝐚𝐭 𝐁𝐨𝐭 𝐇𝐞𝐫𝐞 𝐢𝐬 𝐭𝐡𝐞 𝐩𝐫𝐨𝐟𝐢𝐥𝐞 𝐢𝐦𝐚𝐠𝐞",
         attachment: avatarStream
       });
     } catch {
