@@ -32,14 +32,14 @@ module.exports = {
   },
 
   sendInfo: async function (message) {
-    const botName = "𝗣𝗶𝘄 𝗣𝗶𝘄 𝗖𝗵𝗮𝘁 𝗕𝗼𝘁";
-    const ownerName = "𝗚𝗢𝗝𝗢 𝗢𝗥𝗨𝗣𝗘 𝗣𝗜𝗪 𝗣𝗜𝗪";
-    const moderatedBy = "𝗚𝗢𝗝𝗢 𝗫 𝗭𝗘𝗡𝗜𝗧𝗦𝗨";
+    const botName = "Hasan 𝗖𝗵𝗮𝘁 𝗕𝗼𝘁";
+    const ownerName = "One Side Lover ";
+    const moderatedBy = "Mehedi Hasan";
     const religion = "𝗜𝗦𝗟𝗔𝗠";
     const botStatus = "𝗦𝗜𝗡𝗚𝗟𝗘";
-    const address = "𝗗𝗛𝗔𝗞𝗔 , 𝗕𝗔𝗡𝗚𝗟𝗔𝗗𝗘𝗦𝗛";
+    const address = "Sylhet , 𝗕𝗔𝗡𝗚𝗟𝗔𝗗𝗘𝗦𝗛";
     const userClass = "𝗦𝗘𝗖𝗥𝗘𝗧";
-    const facebook = "https://www.facebook.com/100051168244116";
+    const facebook = "https://www.facebook.com/share/1ApuMVmZdv/";
     const tiktok = "https://www.tiktok.com/𝗻𝗮𝗶.";
 
     const now = moment().tz('Asia/Dhaka');
@@ -55,7 +55,7 @@ module.exports = {
     await new Promise(resolve => setTimeout(resolve, 100));
     const ping = Date.now() - start;
 
-    const photoUrl = "https://i.ibb.co.com/Mx2T8QPr/1761680512606-2.jpg";
+    const photoUrl = "https://i.imgur.com/7qo2uWJ.jpeg";
 
     const body = `
 ╭─ <𝐎𝐖𝐍𝐄𝐑  𝐈𝐍𝐅𝐎> ─╮
