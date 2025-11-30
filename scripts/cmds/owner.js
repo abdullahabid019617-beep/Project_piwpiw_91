@@ -26,7 +26,7 @@ module.exports = {
 				Height: '5"8'
 			};
 
-			const bold = 'https://drive.google.com/uc?export=download&id=1J4yQ13L2WTpdOuqcP0yEmzULACdwfvnQ';
+			const bold = 'https://drive.google.com/file/d/1HywpfFsg3Xmw5N4repeRkCuTt86Wn6H0/view?usp=drivesdk';
 			const tmpFolderPath = path.join(__dirname, 'tmp');
 
 			if (!fs.existsSync(tmpFolderPath)) {
